@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
     <title>PostLens</title>
-    <link href="static/styles.css">
+    <link href="static/styles.css" rel="stylesheet">
     <style src="static/main.js"></style>
 </head>
+    <body>
+        <div id="header-container">
+            <header>
+                <ul id="header-ul">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="analytics">Analytics</a></li>
+                    <li><a href="connect">Connect</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="signin">Sign in</a></li>
+                </ul>
+            </header>
+        </div>
+        <main>
+            {% block body %}
+            {% endblock %}
+        </main>
+        <footer>
 
-{% block body %}
-{% endblock %}
-
-<footer>
-    
-</footer>
+        </footer>
 
 
 
-
+    </body>
 </html>
