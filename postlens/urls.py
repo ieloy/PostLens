@@ -20,10 +20,12 @@ from postlensapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("index", views.index, name="index"),
     path("", views.index, name="index"),
     path("analytics", views.analytics, name="analytics"),
     path("about", views.about, name="about"),
     path("signin", views.signin, name="signin"),
     path("connect", views.connect, name="connect"),
+    path("register", views.register, name="register"),
 
 ]
